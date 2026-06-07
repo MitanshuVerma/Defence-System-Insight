@@ -1,0 +1,11 @@
+Force,Type,Personnel,Reserve,Budget_Billion_INR,Primary_Role,Terrain
+Indian Army,Military,1230000,960000,350,Land Warfare,All
+Indian Navy,Military,75000,55000,80,Maritime Warfare,Coastal
+Indian Air Force,Military,145000,140000,120,Air Defence,All
+Indian Coast Guard,Military,18000,5000,12,Coastal Security,Coastal
+BSF,CAPF,257346,0,65,Border Security,Desert Border
+CRPF,CAPF,303418,0,90,Internal Security,Urban Rural
+CISF,CAPF,159956,0,45,Infrastructure Security,Urban
+ITBP,CAPF,92803,0,35,Mountain Border,Mountain
+Assam Rifles,CAPF,61791,0,25,Counter Insurgency,Hills
+NSG,Special Force,8500,0,10,Counter Terrorism,Urban
