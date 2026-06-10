@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { loadCSV } from "../utils/csvReader";
-
+import ForceCard from "../components/ForceCard";
 function Home() {
   const [forces, setForces] = useState([]);
 
@@ -9,7 +9,7 @@ function Home() {
       const data = await loadCSV(
         "/data/indian_defence_forces.csv"
       );
-    console.log(data);
+      console.log(data);
       setForces(data);
     }
 
@@ -22,11 +22,20 @@ function Home() {
 
       <h2>Indian Armed Forces Dashboard</h2>
 
-      {forces.map((force, index) => (
-        <div key={index}>
-          <h3>{force.Force}</h3>
-        </div>
-      ))}
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        {forces.map((force, index) => (
+          <ForceCard
+            key={index}
+            force={force}
+          />
+        ))}
+      </div>
     </div>
   );
 }
