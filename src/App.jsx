@@ -6,6 +6,7 @@ import ForceDetails from "./pages/ForceDetails";
 import Analytics from "./pages/Analytics";
 import Equipment from "./pages/Equipment";
 import Operations from "./pages/Operations";
+import Recommendation from "./pages/Recommendation";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/equipment" element={<Equipment />} />
         <Route path="/operations" element={<Operations />} />
+        <Route path="/recommendation" element={<Recommendation />} />
       </Routes>
     </BrowserRouter>
   );
