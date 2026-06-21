@@ -1,7 +1,201 @@
-Year,Force,Operation,Region,Category
-1999,Indian Army,Kargil War,Ladakh,War
-2008,NSG,Mumbai Attack Response,Mumbai,Counter Terrorism
-2016,Indian Army,Surgical Strike,LoC,Special Operation
-2019,Indian Air Force,Balakot Strike,Pakistan,Air Operation
-2020,ITBP,Ladakh Deployment,Ladakh,Border Security
-2023,Indian Navy,Anti Piracy Mission,Arabian Sea,Maritime Security
+Operation_ID,Operation_Name,Year,Force,Location,State_Country,Threat_Type,Terrain,Weather,Severity,Status,Casualties,Personnel_Deployed,Duration_Days,Real_Operation_Base
+1,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Fog,Critical,Success,Unknown,48204,110,Yes
+2,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Fog,High,Ongoing,48,1004,2,Yes
+3,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Rain,High,Success,0,5648,102,Yes
+4,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Clear,Critical,Success,0,29658,160,Yes
+5,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Rain,Critical,Success,0,48476,32,Yes
+6,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Rain,Medium,Completed,Unknown,1222,52,Yes
+7,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Clear,High,Ongoing,0,14051,63,Yes
+8,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Fog,Medium,Success,0,4049,56,Yes
+9,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Rain,Medium,Success,0,5719,52,Yes
+10,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Clear,High,Success,0,19215,106,Yes
+11,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Rain,High,Success,472,18457,53,Yes
+12,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Rain,Critical,Completed,Known,34749,101,Yes
+13,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Storm,High,Success,71,17006,9,Yes
+14,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Fog,High,Success,41,19627,78,Yes
+15,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Fog,High,Success,0,6820,86,Yes
+16,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Rain,Critical,Success,0,42140,81,Yes
+17,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Clear,Medium,Success,0,1625,50,Yes
+18,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Clear,Medium,Success,Unknown,5736,34,Yes
+19,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Clear,Low,Success,Unknown,1469,256,Yes
+20,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Storm,Medium,Success,Unknown,1529,36,Yes
+21,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Rain,High,Success,0,2781,108,Yes
+22,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Extreme Heat,High,Success,0,2039,54,Yes
+23,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Rain,Low,Ongoing,0,1434,335,Yes
+24,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Rain,Critical,Completed,18,6237,67,Yes
+25,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Storm,Medium,Success,0,1937,58,Yes
+26,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Clear,Critical,Success,152,34749,151,Yes
+27,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Clear,High,Ongoing,0,24518,2,Yes
+28,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Storm,High,Success,0,9564,76,Yes
+29,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Fog,Critical,Success,0,47770,106,Yes
+30,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Storm,High,Success,0,13907,13,Yes
+31,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Fog,High,Completed,0,5514,10,Yes
+32,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Clear,High,Ongoing,Unknown,18550,42,Yes
+33,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Rain,Medium,Success,0,1687,12,Yes
+34,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Fog,Medium,Success,0,5147,46,Yes
+35,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Clear,High,Success,Unknown,16100,111,Yes
+36,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Fog,High,Success,331,24214,30,Yes
+37,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Clear,High,Completed,525,13642,20,Yes
+38,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Storm,High,Success,8,18772,77,Yes
+39,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Fog,Critical,Success,38,36872,82,Yes
+40,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Fog,High,Success,0,2988,79,Yes
+41,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Rain,High,Success,0,11323,85,Yes
+42,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Clear,Medium,Success,58,5332,53,Yes
+43,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Fog,Medium,Success,Unknown,5769,42,Yes
+44,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Fog,Medium,Success,0,3489,5,Yes
+45,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Clear,High,Success,36,2277,32,Yes
+46,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Rain,High,Success,Unknown,15841,103,Yes
+47,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Extreme Heat,High,Success,0,16850,30,Yes
+48,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Rain,Low,Ongoing,0,2064,195,Yes
+49,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Fog,Critical,Completed,Unknown,19076,126,Yes
+50,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Clear,High,Success,0,18078,92,Yes
+51,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Clear,High,Success,102,11114,113,Yes
+52,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Fog,High,Ongoing,Unknown,18017,39,Yes
+53,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Storm,Critical,Success,0,10092,45,Yes
+54,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Rain,Critical,Success,0,45046,151,Yes
+55,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Clear,High,Success,0,11454,66,Yes
+56,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Fog,Medium,Completed,Unknown,2152,39,Yes
+57,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Clear,High,Ongoing,Unknown,16201,52,Yes
+58,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Fog,High,Success,50,22841,23,Yes
+59,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Clear,Medium,Success,0,1743,14,Yes
+60,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Fog,High,Success,65,1522,10,Yes
+61,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Clear,Critical,Success,17,42836,115,Yes
+62,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Clear,High,Completed,Unknown,11024,25,Yes
+63,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Fog,High,Success,56,19603,102,Yes
+64,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Clear,Critical,Success,52,15292,109,Yes
+65,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Clear,High,Success,Unknown,19737,103,Yes
+66,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Clear,High,Success,0,3535,56,Yes
+67,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Clear,High,Success,69,18154,78,Yes
+68,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Rain,High,Success,0,23156,103,Yes
+69,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Rain,Low,Success,0,1496,152,Yes
+70,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Clear,Medium,Success,0,1726,33,Yes
+71,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Rain,High,Success,0,12446,8,Yes
+72,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Dust Storm,High,Success,0,9919,88,Yes
+73,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Clear,Low,Ongoing,0,1003,188,Yes
+74,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Fog,High,Completed,Unknown,23538,25,Yes
+75,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Snow,High,Success,0,8078,28,Yes
+76,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Clear,High,Success,Known,1589,91,Yes
+77,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Storm,High,Ongoing,0,10060,87,Yes
+78,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Storm,High,Success,Unknown,11072,50,Yes
+79,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Rain,High,Success,0,12431,23,Yes
+80,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Clear,Critical,Success,24,45392,44,Yes
+81,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Fog,High,Completed,66,7677,29,Yes
+82,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Rain,High,Ongoing,0,12773,117,Yes
+83,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Clear,Medium,Success,47,3082,35,Yes
+84,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Rain,Medium,Success,0,3664,38,Yes
+85,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Fog,Medium,Success,69,1942,60,Yes
+86,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Rain,Critical,Success,Unknown,11050,44,Yes
+87,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Clear,High,Completed,Unknown,9188,24,Yes
+88,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Storm,Critical,Success,0,5654,140,Yes
+89,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Clear,Critical,Success,0,41433,115,Yes
+90,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Fog,High,Success,Unknown,6094,49,Yes
+91,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Clear,High,Success,0,22669,111,Yes
+92,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Fog,High,Success,30,7352,63,Yes
+93,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Rain,Medium,Success,Unknown,421,24,Yes
+94,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Rain,Medium,Success,Unknown,3102,25,Yes
+95,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Clear,High,Success,Unknown,4326,48,Yes
+96,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Clear,Medium,Success,0,5077,55,Yes
+97,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Dust Storm,High,Success,0,9049,82,Yes
+98,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Rain,Low,Ongoing,0,2844,320,Yes
+99,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Rain,High,Completed,0,5287,64,Yes
+100,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Snow,High,Success,0,22174,67,Yes
+101,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Fog,High,Success,Known,10197,8,Yes
+102,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Snow,High,Ongoing,Unknown,20385,91,Yes
+103,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Storm,Critical,Success,0,31345,165,Yes
+104,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Storm,Critical,Success,59,29334,116,Yes
+105,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Storm,Critical,Success,0,18235,8,Yes
+106,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Fog,Medium,Completed,0,3025,32,Yes
+107,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Clear,High,Ongoing,0,11613,89,Yes
+108,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Rain,Medium,Success,0,3941,12,Yes
+109,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Rain,Medium,Success,0,1454,15,Yes
+110,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Clear,Medium,Success,0,5348,26,Yes
+111,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Clear,High,Success,234,18552,3,Yes
+112,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Fog,High,Completed,542,8919,27,Yes
+113,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Snow,Critical,Success,Unknown,22831,84,Yes
+114,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Clear,Critical,Success,Unknown,6041,106,Yes
+115,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Clear,High,Success,Unknown,21890,11,Yes
+116,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Fog,Critical,Success,0,37775,44,Yes
+117,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Rain,High,Success,0,22395,34,Yes
+118,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Clear,Medium,Success,Unknown,2553,38,Yes
+119,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Rain,Low,Success,Unknown,661,164,Yes
+120,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Clear,High,Success,0,22589,87,Yes
+121,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Clear,High,Success,Unknown,14830,66,Yes
+122,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Clear,High,Success,Unknown,24678,26,Yes
+123,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Fog,Medium,Ongoing,0,5182,22,Yes
+124,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Clear,Critical,Completed,0,35948,54,Yes
+125,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Fog,Medium,Success,0,1554,56,Yes
+126,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Fog,Critical,Success,Unknown,19298,93,Yes
+127,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Fog,Critical,Ongoing,0,34465,39,Yes
+128,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Storm,High,Success,0,10329,87,Yes
+129,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Storm,Critical,Success,0,24472,146,Yes
+130,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Fog,High,Success,0,21409,74,Yes
+131,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Rain,Medium,Completed,0,1193,56,Yes
+132,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Rain,Medium,Ongoing,0,4290,42,Yes
+133,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Rain,High,Success,0,13377,85,Yes
+134,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Fog,High,Success,0,2486,18,Yes
+135,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Clear,High,Success,0,4536,98,Yes
+136,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Clear,Critical,Success,312,10295,48,Yes
+137,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Rain,Critical,Completed,Unknown,30093,103,Yes
+138,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Snow,Critical,Success,0,19852,121,Yes
+139,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Rain,High,Success,0,18264,45,Yes
+140,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Fog,High,Success,0,3902,36,Yes
+141,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Rain,High,Success,0,6368,102,Yes
+142,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Fog,Medium,Success,0,545,52,Yes
+143,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Rain,Medium,Success,42,1250,55,Yes
+144,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Fog,Low,Success,0,2537,106,Yes
+145,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Rain,High,Success,Unknown,9182,42,Yes
+146,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Rain,High,Success,0,24798,6,Yes
+147,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Extreme Heat,Medium,Success,0,2692,53,Yes
+148,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Clear,Medium,Ongoing,0,3975,46,Yes
+149,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Rain,Critical,Completed,0,6289,100,Yes
+150,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Storm,Medium,Success,16,4695,59,Yes
+151,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Snow,High,Success,Unknown,11044,67,Yes
+152,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Snow,Critical,Ongoing,Unknown,26819,158,Yes
+153,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Rain,Critical,Success,0,15219,147,Yes
+154,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Rain,High,Success,0,5560,21,Yes
+155,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Rain,Critical,Success,0,28717,140,Yes
+156,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Fog,Medium,Completed,0,846,42,Yes
+157,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Rain,High,Ongoing,0,16387,38,Yes
+158,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Fog,High,Success,25,10060,99,Yes
+159,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Clear,High,Success,62,21081,76,Yes
+160,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Rain,Medium,Success,0,5383,58,Yes
+161,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Fog,High,Success,Unknown,18620,68,Yes
+162,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Rain,Critical,Completed,Unknown,42108,139,Yes
+163,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Snow,High,Success,0,10504,73,Yes
+164,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Fog,High,Success,66,23725,2,Yes
+165,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Fog,High,Success,Unknown,21887,56,Yes
+166,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Rain,High,Success,0,15031,25,Yes
+167,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Rain,High,Success,Unknown,7352,115,Yes
+168,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Rain,High,Success,0,20122,94,Yes
+169,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Fog,Medium,Success,44,2263,24,Yes
+170,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Fog,Medium,Success,0,2360,44,Yes
+171,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Clear,Medium,Success,0,2941,42,Yes
+172,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Dust Storm,Medium,Success,68,2782,39,Yes
+173,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Clear,Low,Ongoing,62,260,349,Yes
+174,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Rain,High,Completed,0,6423,51,Yes
+175,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Storm,Medium,Success,24,1558,10,Yes
+176,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Storm,Critical,Success,131,13753,106,Yes
+177,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Fog,High,Ongoing,0,4153,15,Yes
+178,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Clear,Critical,Success,Unknown,45788,89,Yes
+179,Operation Trident,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Fog,Critical,Success,7,8510,105,Yes
+180,Operation Python,1971,Indian Navy,Karachi,Pakistan,Naval Strike,Sea,Rain,High,Success,0,12625,67,Yes
+181,Operation Pawan,1987,Indian Army,Sri Lanka,Sri Lanka,Peacekeeping,Forest,Clear,Medium,Completed,Unknown,3938,26,Yes
+182,Operation Rakshak,1990,Indian Army,Jammu & Kashmir,J&K,Counter Insurgency,Hills,Rain,High,Ongoing,Unknown,21149,103,Yes
+183,Operation Rhino,1991,Indian Army,Assam,Assam,Counter Insurgency,Forest,Rain,Medium,Success,0,5999,37,Yes
+184,Operation Bajrang,1990,Indian Army,Assam,Assam,Counter Insurgency,Forest,Clear,High,Success,Unknown,9804,74,Yes
+185,Operation All Clear,2003,Indian Army,Bhutan Border,Bhutan,Counter Insurgency,Hills,Clear,High,Success,0,13355,115,Yes
+186,Operation Black Tornado,2008,NSG,Mumbai,Maharashtra,Terror Attack,Urban,Rain,Critical,Success,Unknown,21625,75,Yes
+187,Operation Blue Star,1984,Indian Army,Amritsar,Punjab,Counter Terrorism,Urban,Clear,High,Completed,Unknown,17217,84,Yes
+188,Operation Safed Sagar,1999,Indian Air Force,Kargil,Ladakh,Air Support,Mountain,Storm,High,Success,0,18135,34,Yes
+189,Operation Bandar,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Clear,High,Success,52,7487,48,Yes
+190,Surgical Strike,2016,Indian Army,Line of Control,J&K,Counter Terrorism,Hills,Fog,Critical,Success,0,35169,30,Yes
+191,Balakot Air Strike,2019,Indian Air Force,Balakot,Pakistan,Air Strike,Hills,Clear,Critical,Success,Unknown,49894,129,Yes
+192,Operation Sankat Mochan,2016,Indian Air Force,South Sudan,South Sudan,Evacuation,Urban,Clear,Medium,Success,0,2462,53,Yes
+193,Operation Devi Shakti,2021,Indian Air Force,Afghanistan,Afghanistan,Evacuation,Urban,Clear,Medium,Success,Unknown,620,22,Yes
+194,Operation Dost,2023,Indian Armed Forces,Turkey,Turkey,Humanitarian Relief,Urban,Fog,Low,Success,0,2374,61,Yes
+195,Operation Rahat,2015,Indian Navy & Air Force,Yemen,Yemen,Evacuation,Sea,Clear,High,Success,Unknown,2088,89,Yes
+196,Operation Ganga,2022,Indian Air Force,Ukraine,Ukraine,Evacuation,Urban,Rain,High,Success,Unknown,12210,8,Yes
+197,Operation Kaveri,2023,Indian Navy & Air Force,Sudan,Sudan,Evacuation,Desert,Dust Storm,High,Success,0,1725,3,Yes
+198,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Clear,Medium,Ongoing,0,4719,38,Yes
+199,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Rain,Critical,Completed,0,49532,23,Yes
+200,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Snow,High,Success,0,11302,40,Yes
