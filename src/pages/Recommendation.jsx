@@ -82,7 +82,7 @@ function Recommendation() {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/predict", {
+      const response = await fetch("https://defence-system-insight.onrender.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -213,7 +213,7 @@ function Recommendation() {
               <strong>Reason:</strong> {result.reason}
             </p>
           </div>
-        ) : (
+        ) : ( 
           <div className="chart-card">
             <h2>Awaiting Analysis</h2>
             <p>Select incident details and click Analyze Incident.</p>
