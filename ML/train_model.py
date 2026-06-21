@@ -64,10 +64,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Random Forest
 # -----------------------------
 model = RandomForestClassifier(
-    n_estimators=300,
-    max_depth=None,
-    min_samples_split=2,
-    min_samples_leaf=1,
+    n_estimators=60,
+    max_depth=14,
+    min_samples_split=6,
+    min_samples_leaf=3,
     class_weight="balanced",
     random_state=42,
     n_jobs=-1,
