@@ -1,5 +1,4 @@
 Operation_ID,Operation_Name,Year,Force,Location,State_Country,Threat_Type,Terrain,Weather,Severity,Status,Casualties,Personnel_Deployed,Duration_Days,Real_Operation_Base
-Operation Sindoor,2025,Indian Armed Forces,Pakistan & Pakistan-occupied Kashmir,Counter-Terrorism,Airspace,Completed
 1,Operation Vijay,1999,Indian Army,Kargil,Ladakh,Border Intrusion,Mountain,Fog,Critical,Success,Unknown,48204,110,Yes
 2,Operation Meghdoot,1984,Indian Army,Siachen Glacier,Ladakh,Border Security,Mountain,Fog,High,Ongoing,48,1004,2,Yes
 3,Operation Cactus,1988,Indian Armed Forces,Maldives,Maldives,Military Intervention,Island,Rain,High,Success,0,5648,102,Yes
@@ -200,3 +199,4 @@ Operation Sindoor,2025,Indian Armed Forces,Pakistan & Pakistan-occupied Kashmir,
 198,Operation Sadbhavana,1998,Indian Army,Jammu & Kashmir,J&K,Civic Action,Hills,Clear,Medium,Ongoing,0,4719,38,Yes
 199,Operation Parakram,2001,Indian Armed Forces,India-Pakistan Border,Border Region,Military Mobilization,Border,Rain,Critical,Completed,0,49532,23,Yes
 200,Operation Maitri,2015,Indian Army,Nepal,Nepal,Disaster Relief,Mountain,Snow,High,Success,0,11302,40,Yes
+201,Operation Sindoor,2025,Indian Armed Forces,Pakistan & Pakistan-occupied Kashmir,Counter-Terrorism,Airspace,Completed
