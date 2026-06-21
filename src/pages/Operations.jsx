@@ -14,42 +14,29 @@ function Operations() {
   }, []);
 
   return (
-    <div
-      style={{
-        width: "95%",
-        maxWidth: "1400px",
-        margin: "0 auto",
-        padding: "30px",
-      }}
-    >
-      <h1>Historical Operations</h1>
+    <main className="page-container">
+      <section className="hero-section">
+        <h1 className="page-title">Historical Operations</h1>
+        <p className="page-subtitle">
+          Real Indian military, evacuation, counter-terror and relief operations.
+        </p>
+      </section>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "20px",
-          marginTop: "30px",
-        }}
-      >
+      <div className="force-grid">
         {operations.map((operation, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundColor: "#1e293b",
-              padding: "20px",
-              borderRadius: "12px",
-            }}
-          >
-            <h2>{operation.Operation}</h2>
+          <div className="force-card" key={index}>
+            <h2>{operation.Operation_Name}</h2>
+
             <p><strong>Year:</strong> {operation.Year}</p>
             <p><strong>Force:</strong> {operation.Force}</p>
-            <p><strong>Region:</strong> {operation.Region}</p>
-            <p><strong>Category:</strong> {operation.Category}</p>
+            <p><strong>Location:</strong> {operation.Location}</p>
+            <p><strong>Threat:</strong> {operation.Threat_Type}</p>
+            <p><strong>Terrain:</strong> {operation.Terrain}</p>
+            <p><strong>Status:</strong> {operation.Status}</p>
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 
