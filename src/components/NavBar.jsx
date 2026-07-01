@@ -1,9 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <nav className="navbar">
-      <div className="nav-logo">Defence System Insight</div>
+      <Link to="/" className="nav-logo">
+        Defence System Insight
+      </Link>
 
       <div className="nav-links">
         <NavLink className="nav-link" to="/home">
@@ -34,4 +36,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavBar;  
