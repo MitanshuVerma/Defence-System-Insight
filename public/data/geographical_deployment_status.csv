@@ -1,0 +1,13 @@
+Deployment_ID,Region,Force,Threat_Level,Deployment_Status,Threat_Type,Terrain,Latitude,Longitude,Personnel,Equipment
+1,Ladakh,ITBP,High,Active,Mountain Border Intrusion,Mountain,34.1526,77.5771,1200,"Snow vehicles, surveillance drones, satellite radios"
+2,Siachen Glacier,Indian Army,Critical,Active,High Altitude Border Security,High Altitude,35.4212,77.1096,1800,"High altitude gear, artillery support, helicopters"
+3,Jammu and Kashmir,Indian Army,High,Active,Counter Insurgency,Hills,33.7782,76.5762,2500,"Armoured vehicles, drones, communication systems"
+4,Punjab Border,BSF,Medium,Active,Border Smuggling,Border,31.1471,75.3412,900,"Night vision, patrol vehicles, border sensors"
+5,Rajasthan Border,BSF,Medium,Active,Border Intrusion,Desert,27.0238,74.2179,1100,"Desert patrol vehicles, thermal cameras, drones"
+6,Gujarat Coast,Indian Coast Guard,Medium,Active,Coastal Infiltration,Coastal,21.1702,72.8311,650,"Patrol vessels, coastal radar, helicopters"
+7,Mumbai Coast,Indian Navy,High,Active,Maritime Security,Sea,19.076,72.8777,1500,"Warships, surveillance aircraft, naval command systems"
+8,Delhi NCR,NSG,Medium,Standby,Urban Terror Alert,Urban,28.6139,77.209,450,"Special weapons, bomb disposal units, tactical vehicles"
+9,Assam,Assam Rifles,High,Active,Insurgency Watch,Forest,26.2006,92.9376,1000,"Jungle warfare gear, patrol vehicles, communication systems"
+10,Chennai Coast,Indian Coast Guard,Low,Monitoring,Maritime Patrol,Coastal,13.0827,80.2707,500,"Patrol boats, coastal radar, rescue equipment"
+11,Andaman and Nicobar,Indian Navy,High,Active,Strategic Maritime Surveillance,Island,11.7401,92.6586,1300,"Naval aircraft, warships, island surveillance systems"
+12,Industrial Zone Gujarat,CISF,Medium,Active,Infrastructure Security,Industrial,22.3072,73.1812,700,"Access control systems, surveillance cameras, response vehicles"

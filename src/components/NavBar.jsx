@@ -1,19 +1,37 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function NavBar() {
   return (
     <nav className="navbar">
       <div className="nav-logo">Defence System Insight</div>
 
       <div className="nav-links">
-        <Link className="nav-link" to="/">Home</Link>
-        <Link className="nav-link" to="/analytics">Analytics</Link>
-        <Link className="nav-link" to="/equipment">Equipment</Link>
-        <Link className="nav-link" to="/operations">Operations</Link>
-        <Link className="nav-link" to="/recommendation">Recommendation</Link>
+        <NavLink className="nav-link" to="/home">
+          Home
+        </NavLink>
+
+        <NavLink className="nav-link" to="/analytics">
+          Analytics
+        </NavLink>
+
+        <NavLink className="nav-link" to="/equipment">
+          Equipment
+        </NavLink>
+
+        <NavLink className="nav-link" to="/operations">
+          Operations
+        </NavLink>
+
+        <NavLink className="nav-link" to="/recommendation">
+          Recommendation
+        </NavLink>
+
+        <NavLink className="nav-link" to="/deployments">
+          Deployments
+        </NavLink>
       </div>
     </nav>
   );
 }
 
-export default Navbar;
+export default NavBar;
