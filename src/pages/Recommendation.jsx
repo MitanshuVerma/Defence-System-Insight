@@ -1,4 +1,5 @@
 import { useState } from "react";
+import jsPDF from "jspdf";
 
 function Recommendation() {
   const [terrain, setTerrain] = useState("");
@@ -8,6 +9,8 @@ function Recommendation() {
   const [urgency, setUrgency] = useState("");
 
   const [result, setResult] = useState(null);
+  const [history, setHistory] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   function getAutoValues() {
     let auto = {
@@ -70,39 +73,98 @@ function Recommendation() {
       return;
     }
 
-    const autoValues = getAutoValues();
-
     const inputData = {
       Terrain: terrain,
       Threat_Type: threat,
       Weather: weather,
       Severity: severity,
       Urgency: urgency,
-      ...autoValues,
+      ...getAutoValues(),
     };
 
     try {
+      setLoading(true);
+      setResult(null);
+
       const response = await fetch("https://defence-system-insight.onrender.com/predict", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(inputData),
       });
 
       const data = await response.json();
 
-      setResult({
+      const predictionResult = {
         force: data.recommended_force,
         confidence: data.confidence,
         secondaryForce: data.secondary_force,
         riskLevel: data.risk_level,
         reason: data.reason,
-      });
+      };
+
+      setResult(predictionResult);
+
+      const newHistoryItem = {
+        time: new Date().toLocaleTimeString(),
+        terrain,
+        threat,
+        severity,
+        weather,
+        urgency,
+        force: data.recommended_force,
+        confidence: data.confidence,
+      };
+
+      setHistory((prev) => [newHistoryItem, ...prev].slice(0, 5));
     } catch (error) {
-      alert("Backend API is not running. Start FastAPI first.");
+      alert("Backend API is not reachable. Please check the deployed API.");
       console.error(error);
+    } finally {
+      setLoading(false);
     }
+  }
+
+  function generateMissionReport() {
+    if (!result) {
+      alert("Please generate a recommendation first.");
+      return;
+    }
+
+    const doc = new jsPDF();
+    const date = new Date().toLocaleString();
+
+    doc.setFontSize(18);
+    doc.text("Defence System Insight", 20, 20);
+    doc.setFontSize(14);
+    doc.text("AI Mission Recommendation Report", 20, 32);
+    doc.setFontSize(11);
+    doc.text(`Generated On: ${date}`, 20, 42);
+    doc.line(20, 48, 190, 48);
+
+    doc.setFontSize(13);
+    doc.text("Incident Details", 20, 60);
+    doc.setFontSize(11);
+    doc.text(`Terrain: ${terrain}`, 20, 72);
+    doc.text(`Threat Type: ${threat}`, 20, 82);
+    doc.text(`Severity: ${severity}`, 20, 92);
+    doc.text(`Weather: ${weather}`, 20, 102);
+    doc.text(`Urgency: ${urgency}`, 20, 112);
+
+    doc.setFontSize(13);
+    doc.text("AI Recommendation", 20, 130);
+    doc.setFontSize(11);
+    doc.text(`Recommended Force: ${result.force}`, 20, 142);
+    doc.text(`Secondary Support: ${result.secondaryForce}`, 20, 152);
+    doc.text(`Model Confidence: ${result.confidence}%`, 20, 162);
+    doc.text(`Risk Level: ${result.riskLevel}`, 20, 172);
+
+    doc.setFontSize(13);
+    doc.text("Reason", 20, 190);
+    doc.setFontSize(11);
+    const reasonLines = doc.splitTextToSize(result.reason, 165);
+    doc.text(reasonLines, 20, 202);
+
+    doc.save("mission_report.pdf");
   }
 
   return (
@@ -114,14 +176,7 @@ function Recommendation() {
         </p>
       </section>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "30px",
-          alignItems: "start",
-        }}
-      >
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "30px", alignItems: "start" }}>
         <div className="chart-card">
           <h2>Incident Details</h2>
 
@@ -188,35 +243,59 @@ function Recommendation() {
 
           <br /><br />
 
-          <button className="filter-btn active" onClick={recommendForce}>
-            Analyze Incident
+          <button className="filter-btn active" onClick={recommendForce} disabled={loading}>
+            {loading ? "Analyzing..." : "Analyze Incident"}
           </button>
         </div>
 
-        {result ? (
+        {loading ? (
+          <div className="chart-card">
+            <h2>Analyzing Incident...</h2>
+            <div className="loader"></div>
+            <div className="analysis-steps">
+              <p>✓ Reading incident details</p>
+              <p>✓ Evaluating terrain and weather</p>
+              <p>✓ Checking threat pattern</p>
+              <p>✓ Running Random Forest model</p>
+              <p>✓ Generating recommendation</p>
+            </div>
+          </div>
+        ) : result ? (
           <div className="chart-card">
             <h2>Recommended Force: {result.force}</h2>
+            <p><strong>Secondary Support:</strong> {result.secondaryForce}</p>
+            <p><strong>Model Confidence:</strong> {result.confidence}%</p>
+            <p><strong>Risk Level:</strong> {result.riskLevel}</p>
+            <p><strong>Reason:</strong> {result.reason}</p>
 
-            <p>
-              <strong>Secondary Support:</strong> {result.secondaryForce}
-            </p>
-
-            <p>
-              <strong>Model Confidence:</strong> {result.confidence}%
-            </p>
-
-            <p>
-              <strong>Risk Level:</strong> {result.riskLevel}
-            </p>
-
-            <p>
-              <strong>Reason:</strong> {result.reason}
-            </p>
+            <button className="filter-btn active" onClick={generateMissionReport}>
+              Download Mission Report
+            </button>
           </div>
-        ) : ( 
+        ) : (
           <div className="chart-card">
             <h2>Awaiting Analysis</h2>
             <p>Select incident details and click Analyze Incident.</p>
+          </div>
+        )}
+
+        {history.length > 0 && (
+          <div className="chart-card" style={{ gridColumn: "1 / -1" }}>
+            <h2>Recent AI Recommendations</h2>
+            <div className="history-list">
+              {history.map((item, index) => (
+                <div className="history-item" key={index}>
+                  <div>
+                    <strong>{item.force}</strong>
+                    <p>{item.terrain} | {item.threat} | {item.severity}</p>
+                  </div>
+                  <div>
+                    <span>{item.confidence}%</span>
+                    <small>{item.time}</small>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </div>
