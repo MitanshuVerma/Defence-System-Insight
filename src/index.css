@@ -622,3 +622,131 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.force-details-page {
+  padding-top: 35px;
+}
+
+.force-hero-card {
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.96));
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 24px;
+  padding: 34px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.force-hero-card h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+  margin: 10px 0;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.force-hero-card p {
+  color: #cbd5e1;
+  max-width: 750px;
+}
+
+.force-badge {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.14);
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.back-btn {
+  text-decoration: none;
+  background: #38bdf8;
+  color: #020617;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.force-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.force-stat-card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.force-stat-card span {
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.force-stat-card h2 {
+  color: #38bdf8;
+  margin-top: 12px;
+  font-size: 1.8rem;
+}
+
+.force-details-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.force-info-card,
+.force-chart-card {
+  min-height: 430px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.info-row span {
+  color: #94a3b8;
+}
+
+.info-row strong {
+  color: #f8fafc;
+  text-align: right;
+}
+
+.force-chart-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.force-chart-card h2 {
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .force-hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .force-details-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .force-hero-card h1 {
+    font-size: 2.3rem;
+  }
+}
